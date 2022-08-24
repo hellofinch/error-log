@@ -1,0 +1,643 @@
+2022-08-24 09:54:21,456	WARNING worker.py:1326 -- WARNING: 192 PYTHON worker processes have been started on node: cadea1895b682ab2adc27d000633f86f03465634bb466447c1792a3a with address: 10.8.1.16. This could be a result of using a large number of actors, or due to tasks blocked in ray.get() calls (see https://github.com/ray-project/ray/issues/3644 for some discussion of workarounds).
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 15 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b0d0b753207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b0d0b5105d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,306 E 29681 29681] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 15 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,306 E 29681 29681] logging.cc:321: PC: @     0x2b0d0b753207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 5 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,307 E 29681 29681] logging.cc:321:     @     0x2b0d0b5105d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,309 E 29681 29681] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b8296e72207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b8296c2f5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,317 E 29685 29685] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 5 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,317 E 29685 29685] logging.cc:321: PC: @     0x2b8296e72207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,328 E 29685 29685] logging.cc:321:     @     0x2b8296c2f5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,332 E 29685 29685] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m Exception in thread ray_import_thread:
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m Traceback (most recent call last):
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     self.run()
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 864, in run
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/import_thread.py", line 71, in _run
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     key = self.subscriber.poll()
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/gcs_pubsub.py", line 409, in poll
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/gcs_pubsub.py", line 263, in _poll_locked
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     self._poll_request(), timeout=timeout)
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     (operations,), event_handler, self._context)
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     _run_channel_spin_thread(state)
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     channel_spin_thread.start()
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 846, in start
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m RuntimeError: can't start new thread
+[2m[36m(s pid=29684, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m /bin/sh: fork: retry: No child processes
+[2m[33m(raylet, ip=10.8.1.16)[0m /bin/sh: fork: retry: No child processes
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 1 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b5bcd339207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b5bcd0f65d0  586959256  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,523 E 29692 29692] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 1 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,523 E 29692 29692] logging.cc:321: PC: @     0x2b5bcd339207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,524 E 29692 29692] logging.cc:321:     @     0x2b5bcd0f65d0  586959256  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,525 E 29692 29692] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m Exception in thread ray_import_thread:
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m Traceback (most recent call last):
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     self.run()
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 864, in run
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/import_thread.py", line 71, in _run
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     key = self.subscriber.poll()
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/gcs_pubsub.py", line 409, in poll
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/gcs_pubsub.py", line 263, in _poll_locked
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     self._poll_request(), timeout=timeout)
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     (operations,), event_handler, self._context)
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     _run_channel_spin_thread(state)
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     channel_spin_thread.start()
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 846, in start
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m RuntimeError: can't start new thread
+[2m[36m(s pid=29690, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 16 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ab301354207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ab3011115d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,574 E 29694 29694] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 16 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,574 E 29694 29694] logging.cc:321: PC: @     0x2ab301354207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,575 E 29694 29694] logging.cc:321:     @     0x2ab3011115d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,576 E 29694 29694] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m /bin/sh: fork: retry: No child processes
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 22 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b5b856d0207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b5b8548d5d0  510571944  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,629 E 29706 29706] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 22 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,629 E 29706 29706] logging.cc:321: PC: @     0x2b5b856d0207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,630 E 29706 29706] logging.cc:321:     @     0x2b5b8548d5d0  510571944  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,632 E 29706 29706] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 22 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ba814f24207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ba814ce15d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,671 E 29703 29703] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 22 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,671 E 29703 29703] logging.cc:321: PC: @     0x2ba814f24207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,672 E 29703 29703] logging.cc:321:     @     0x2ba814ce15d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,673 E 29703 29703] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 13 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b522e4b4207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b522e2715d0   84531192  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,697 E 29700 30251] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 13 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,697 E 29700 30251] logging.cc:321: PC: @     0x2b522e4b4207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,698 E 29700 30251] logging.cc:321:     @     0x2b522e2715d0   84531192  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,700 E 29700 30251] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306067 on cpu 22 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ad33259a207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ad3323575d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,733 E 29695 29695] logging.cc:321: *** SIGABRT received at time=1661306067 on cpu 22 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,733 E 29695 29695] logging.cc:321: PC: @     0x2ad33259a207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,735 E 29695 29695] logging.cc:321:     @     0x2ad3323575d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:27,736 E 29695 29695] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306070 on cpu 15 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2abdf5671207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2abdf542e5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:30,932 E 29968 29968] logging.cc:321: *** SIGABRT received at time=1661306070 on cpu 15 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:30,932 E 29968 29968] logging.cc:321: PC: @     0x2abdf5671207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:30,934 E 29968 29968] logging.cc:321:     @     0x2abdf542e5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:30,935 E 29968 29968] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306071 on cpu 15 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b37b1ca5207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b37b1a625d0  1960321464  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,150 E 30235 30235] logging.cc:321: *** SIGABRT received at time=1661306071 on cpu 15 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,151 E 30235 30235] logging.cc:321: PC: @     0x2b37b1ca5207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,152 E 30235 30235] logging.cc:321:     @     0x2b37b1a625d0  1960321464  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,154 E 30235 30235] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306071 on cpu 17 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ab1ff8bd207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ab1ff67a5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,483 E 30007 30007] logging.cc:321: *** SIGABRT received at time=1661306071 on cpu 17 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,483 E 30007 30007] logging.cc:321: PC: @     0x2ab1ff8bd207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,484 E 30007 30007] logging.cc:321:     @     0x2ab1ff67a5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,485 E 30007 30007] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306071 on cpu 13 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b226998f207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b226974c5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,573 E 29990 29990] logging.cc:321: *** SIGABRT received at time=1661306071 on cpu 13 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,573 E 29990 29990] logging.cc:321: PC: @     0x2b226998f207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,574 E 29990 29990] logging.cc:321:     @     0x2b226974c5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,575 E 29990 29990] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306071 on cpu 13 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2af5c4d41207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2af5c4afe5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,792 E 30144 30144] logging.cc:321: *** SIGABRT received at time=1661306071 on cpu 13 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,792 E 30144 30144] logging.cc:321: PC: @     0x2af5c4d41207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,794 E 30144 30144] logging.cc:321:     @     0x2af5c4afe5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:31,795 E 30144 30144] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,371 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29681) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,390 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29685) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,396 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29686) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,408 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29689) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,418 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29691) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,424 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29692) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,430 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29693) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,435 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29694) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,441 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29695) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,447 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29696) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,452 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29697) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,458 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29698) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,463 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29699) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,469 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29700) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,474 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29701) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,481 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29702) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,487 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29703) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,492 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29704) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,498 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29705) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:51,503 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29706) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 21 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b3591229207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b3590fe65d0  1063863528  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,498 E 30600 30600] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 21 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,498 E 30600 30600] logging.cc:321: PC: @     0x2b3591229207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,499 E 30600 30600] logging.cc:321:     @     0x2b3590fe65d0  1063863528  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,501 E 30600 30600] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 20 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ae405397207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ae4051545d0  232491000  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,560 E 30602 30718] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 20 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,560 E 30602 30718] logging.cc:321: PC: @     0x2ae405397207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,561 E 30602 30718] logging.cc:321:     @     0x2ae4051545d0  232491000  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,562 E 30602 30718] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 30 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b19e3a14207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b19e37d15d0  259240520  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,608 E 30603 30728] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 30 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,608 E 30603 30728] logging.cc:321: PC: @     0x2b19e3a14207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,609 E 30603 30728] logging.cc:321:     @     0x2b19e37d15d0  259240520  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,611 E 30603 30728] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 30 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b8dcbb85207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b8dcb9425d0  257729832  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,623 E 30605 30731] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 30 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,623 E 30605 30731] logging.cc:321: PC: @     0x2b8dcbb85207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,624 E 30605 30731] logging.cc:321:     @     0x2b8dcb9425d0  257729832  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,625 E 30605 30731] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 29 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b945a48b207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b945a2485d0  214712184  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2aef2cf81207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2aef2cd3e5d0  2140700840  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,640 E 30607 30755] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 29 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,640 E 30607 30755] logging.cc:321: PC: @     0x2b945a48b207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,640 E 30601 30601] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,640 E 30601 30601] logging.cc:321: PC: @     0x2aef2cf81207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,641 E 30607 30755] logging.cc:321:     @     0x2b945a2485d0  214712184  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,642 E 30601 30601] logging.cc:321:     @     0x2aef2cd3e5d0  2140700840  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,642 E 30607 30755] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,643 E 30601 30601] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b36f1896207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b36f16535d0  1464915256  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,692 E 30613 30613] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,692 E 30613 30613] logging.cc:321: PC: @     0x2b36f1896207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,693 E 30613 30613] logging.cc:321:     @     0x2b36f16535d0  1464915256  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,694 E 30613 30613] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b799e61b207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b799e3d85d0  341348664  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,715 E 30614 30614] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,715 E 30614 30614] logging.cc:321: PC: @     0x2b799e61b207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,716 E 30614 30614] logging.cc:321:     @     0x2b799e3d85d0  341348664  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,718 E 30614 30614] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 25 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b7e36d37207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b7e36af45d0   75603832  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,724 E 30610 30785] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 25 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,724 E 30610 30785] logging.cc:321: PC: @     0x2b7e36d37207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,726 E 30610 30785] logging.cc:321:     @     0x2b7e36af45d0   75603832  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,727 E 30610 30785] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ba12b176207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ba12af335d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,755 E 30616 30616] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,755 E 30616 30616] logging.cc:321: PC: @     0x2ba12b176207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,757 E 30616 30616] logging.cc:321:     @     0x2ba12af335d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,758 E 30616 30616] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2add3212c207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2add31ee95d0  255341272  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,767 E 30604 30604] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,767 E 30604 30604] logging.cc:321: PC: @     0x2add3212c207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,768 E 30604 30604] logging.cc:321:     @     0x2add31ee95d0  255341272  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,770 E 30604 30604] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 5 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b1571486207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b15712435d0  231511320  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,779 E 30609 30801] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 5 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,779 E 30609 30801] logging.cc:321: PC: @     0x2b1571486207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,780 E 30609 30801] logging.cc:321:     @     0x2b15712435d0  231511320  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,781 E 30609 30801] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m Exception in thread ray_import_thread:
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m Traceback (most recent call last):
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     self.run()
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 864, in run
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     self._target(*self._args, **self._kwargs)
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/import_thread.py", line 71, in _run
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     key = self.subscriber.poll()
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/gcs_pubsub.py", line 409, in poll
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     self._poll_locked(timeout=timeout)
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/gcs_pubsub.py", line 263, in _poll_locked
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     self._poll_request(), timeout=timeout)
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 976, in future
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     (operations,), event_handler, self._context)
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 1306, in create
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     _run_channel_spin_thread(state)
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/grpc/_channel.py", line 1270, in _run_channel_spin_thread
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     channel_spin_thread.start()
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "src/python/grpcio/grpc/_cython/_cygrpc/fork_posix.pyx.pxi", line 117, in grpc._cython.cygrpc.ForkManagedThread.start
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/PyTorch/cccp/pytorch_1.8-rocm_4.0.1-fastmoe/lib/python3.6/threading.py", line 846, in start
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m     _start_new_thread(self._bootstrap, ())
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m RuntimeError: can't start new thread
+[2m[36m(s pid=30606, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306095 on cpu 11 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ad4fb425207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ad4fb1e25d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,910 E 30615 30615] logging.cc:321: *** SIGABRT received at time=1661306095 on cpu 11 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,910 E 30615 30615] logging.cc:321: PC: @     0x2ad4fb425207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,911 E 30615 30615] logging.cc:321:     @     0x2ad4fb1e25d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:55,913 E 30615 30615] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:56,955 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29968) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:56,980 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(29990) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,013 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30007) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,048 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30046) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,059 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30053) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,100 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30078) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,168 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30123) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,189 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30144) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,252 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30182) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,292 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30198) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,343 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30220) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:57,427 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30235) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306098 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b9a7c323207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b9a7c0e05d0  249741176  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:58,836 E 30804 30877] logging.cc:321: *** SIGABRT received at time=1661306098 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:58,836 E 30804 30877] logging.cc:321: PC: @     0x2b9a7c323207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:58,838 E 30804 30877] logging.cc:321:     @     0x2b9a7c0e05d0  249741176  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:54:58,839 E 30804 30877] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b79621db207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b7961f985d0  217530952  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,299 E 30824 30882] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 9 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,299 E 30824 30882] logging.cc:321: PC: @     0x2b79621db207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,300 E 30824 30882] logging.cc:321:     @     0x2b7961f985d0  217530952  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,301 E 30824 30882] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2abcd1008207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2abcd0dc55d0  183497368  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,366 E 30825 30825] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 19 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,366 E 30825 30825] logging.cc:321: PC: @     0x2abcd1008207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,367 E 30825 30825] logging.cc:321:     @     0x2abcd0dc55d0  183497368  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,368 E 30825 30825] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 29 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2aac8ec15207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2aac8e9d25d0  206808344  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,377 E 30826 30890] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 29 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,377 E 30826 30890] logging.cc:321: PC: @     0x2aac8ec15207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,378 E 30826 30890] logging.cc:321:     @     0x2aac8e9d25d0  206808344  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,380 E 30826 30890] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 29 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2acc0e81c207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2acc0e5d95d0  210974712  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,446 E 30828 30897] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 29 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,446 E 30828 30897] logging.cc:321: PC: @     0x2acc0e81c207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,448 E 30828 30897] logging.cc:321:     @     0x2acc0e5d95d0  210974712  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,449 E 30828 30897] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b6df7154207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b6df6f115d0  1399800040  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,537 E 30831 30831] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,537 E 30831 30831] logging.cc:321: PC: @     0x2b6df7154207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,538 E 30831 30831] logging.cc:321:     @     0x2b6df6f115d0  1399800040  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,539 E 30831 30831] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2ba0857e0207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2ba08559d5d0  510859064  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,580 E 30837 30837] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,580 E 30837 30837] logging.cc:321: PC: @     0x2ba0857e0207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,581 E 30837 30837] logging.cc:321:     @     0x2ba08559d5d0  510859064  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,583 E 30837 30837] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2b82f217b207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2b82f1f385d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,733 E 30836 30836] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,733 E 30836 30836] logging.cc:321: PC: @     0x2b82f217b207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,735 E 30836 30836] logging.cc:321:     @     0x2b82f1f385d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,736 E 30836 30836] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m terminate called after throwing an instance of 'std::system_error'
+[2m[33m(raylet, ip=10.8.1.16)[0m   what():  Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m PC: @     0x2af9dc8b1207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m     @     0x2af9dc66e5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,878 E 30851 30851] logging.cc:321: *** SIGABRT received at time=1661306100 on cpu 24 ***
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,878 E 30851 30851] logging.cc:321: PC: @     0x2af9dc8b1207  (unknown)  raise
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,879 E 30851 30851] logging.cc:321:     @     0x2af9dc66e5d0  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:00,881 E 30851 30851] logging.cc:321:     @ 0x61726f706d657420  (unknown)  (unknown)
+[2m[33m(raylet, ip=10.8.1.16)[0m Fatal Python error: Aborted
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+[2m[33m(raylet, ip=10.8.1.16)[0m Stack (most recent call first):
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1535 in connect
+[2m[33m(raylet, ip=10.8.1.16)[0m   File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/workers/default_worker.py", line 204 in <module>
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,375 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30600) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,395 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30601) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,400 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30602) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,413 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30603) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,423 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30604) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,429 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30605) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,440 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30607) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,446 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30608) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,452 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30609) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,457 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30610) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,463 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30611) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,469 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30612) have not registered within the timeout. The process is still alive, probably it's hanging during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:21,475 E 22223 22223] (raylet) worker_pool.cc:481: Some workers of the worker process(30613) have not registered within the timeout. The process is dead, probably it crashed during start.
+[2m[33m(raylet, ip=10.8.1.16)[0m /bin/sh: fork: retry: No child processes
+[2m[33m(raylet, ip=10.8.1.16)[0m [2022-08-24 09:55:22,052 C 22223 22223] (raylet) worker_pool.cc:558: Failed to start worker with return value system:11: Resource temporarily unavailable
+[2m[33m(raylet, ip=10.8.1.16)[0m *** StackTrace Information ***
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::SpdLogMessage::Flush()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::RayLog::~RayLog()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::WorkerPool::StartProcess()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::WorkerPool::StartWorkerProcess()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::WorkerPool::PopWorker()::{lambda()#1}::operator()()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::WorkerPool::PopWorker()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::ClusterTaskManager::DispatchScheduledTasksToWorkers()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::ClusterTaskManager::ScheduleAndDispatchTasks()
+[2m[33m(raylet, ip=10.8.1.16)[0m     ray::raylet::WorkerPool::MonitorStartingWorkerProcess()::{lambda()#1}::operator()()
+[2m[33m(raylet, ip=10.8.1.16)[0m     boost::asio::detail::wait_handler<>::do_complete()
+[2m[33m(raylet, ip=10.8.1.16)[0m     boost::asio::detail::scheduler::do_run_one()
+[2m[33m(raylet, ip=10.8.1.16)[0m     boost::asio::detail::scheduler::run()
+[2m[33m(raylet, ip=10.8.1.16)[0m     boost::asio::io_context::run()
+[2m[33m(raylet, ip=10.8.1.16)[0m     main
+[2m[33m(raylet, ip=10.8.1.16)[0m     __libc_start_main
+[2m[33m(raylet, ip=10.8.1.16)[0m 
+2022-08-24 09:55:51,384	WARNING worker.py:1326 -- The node with node id: cadea1895b682ab2adc27d000633f86f03465634bb466447c1792a3a and ip: 10.8.1.16 has been marked dead because the detector has missed too many heartbeats from it. This can happen when a raylet crashes unexpectedly or has lagging heartbeats.
+Traceback (most recent call last):
+  File "all_reduce.py", line 135, in <module>
+    st=ray.get(set_list)
+  File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/_private/client_mode_hook.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/public/software/apps/AI/apps/DeepLearning/ray_base/site-packages/ray/worker.py", line 1765, in get
+    raise value
+ray.exceptions.RayActorError: The actor died unexpectedly before finishing this task.
+	class_name: s
+	actor_id: 14f44ede67d2472efc79905801000000
+	namespace: bcf35d35-5c3c-4f5c-b189-11d383bbb31f
+	ip: 10.8.1.16
+The actor is dead because its node has died. Node Id: cadea1895b682ab2adc27d000633f86f03465634bb466447c1792a3a
